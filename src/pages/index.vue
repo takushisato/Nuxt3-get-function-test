@@ -4,17 +4,17 @@
 </template>
 <script setup>
 // インポートなくても動く
-import {getHoantyoData, hoge} from "~/composables/testStore";
+import {getHoantyoData, hoge} from '~/composables/testStore';
 
 // 問題なし
-const getSample = hoge()
-console.log(getSample)
+const getSample = hoge();
+console.log(getSample);
 
 // API取得問題なし
-const umiyoho = getHoantyoData()
-console.log(umiyoho)
+const umiyoho = getHoantyoData();
+console.log(umiyoho);
 
 // await付けても問題なく動く
-const umiyoho2 = await getHoantyoData()
-console.log(umiyoho2)
+const umiyoho2 = await getHoantyoData();
+console.log(umiyoho2);
 </script>
