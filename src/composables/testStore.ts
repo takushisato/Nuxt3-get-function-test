@@ -13,3 +13,8 @@ export async function getHoantyoData() {
     });
     return data;
 }
+
+
+// プラグインのクラスを呼び出すとNG　エラーになる
+const {$my} = useNuxtApp()
+console.log($my.getURL())

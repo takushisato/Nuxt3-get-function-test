@@ -1,18 +1,12 @@
-<template>
-  <!--  console.logで確認する目的のためテンプレート側は適当-->
-  <h1>テスト</h1>
-  <SampleComponent/>
-</template>
-<script setup>
-// 問題なし
-// const getSample = hoge();
-// console.log(getSample);
-//
-// // API取得問題なし
-// const umiyoho = getHoantyoData();
-// console.log(umiyoho);
-//
-// // await付けても問題なく動く
-// const umiyoho2 = await getHoantyoData();
-// console.log(umiyoho2);
+<script setup lang="ts">
+const {$my} = useNuxtApp()
+console.log($my.getURL())
+
+console.log(getHoantyoData())
 </script>
+
+<template>
+  <div>
+    <h1>取得サンプル</h1>
+  </div>
+</template>
