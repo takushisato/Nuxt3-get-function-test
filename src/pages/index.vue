@@ -1,8 +1,12 @@
 <script setup lang="ts">
-const {$my} = useNuxtApp()
-console.log($my.getURL())
+// プラグインから値を取得
+// const {$my} = useNuxtApp()
+// console.log($my.getURL())
 
-console.log(getHoantyoData())
+// composablesから値を取得
+import {getSample} from "~/composables/testStore2";
+
+console.log(getSample())
 </script>
 
 <template>
